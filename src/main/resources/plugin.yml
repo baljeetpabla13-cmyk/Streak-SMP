@@ -1,0 +1,18 @@
+name: StreakSMP
+version: 1.0.0
+main: com.xazymc.streak.StreakSMP
+api-version: '1.21'
+author: XazyMC
+description: Kill-based progression for a competitive Lifesteal SMP.
+commands:
+  level:
+    description: View your current streak level and progress.
+    usage: /level
+    aliases: [streak]
+  top:
+    description: View the top current streaks.
+    usage: /top
+permissions:
+  streak.admin:
+    description: Allows administration of Streak SMP.
+    default: op
