@@ -1,0 +1,22 @@
+# Streak SMP configuration
+kills-per-level: 5
+
+# A player can kill the same victim twice consecutively for progression.
+# The third and later consecutive kills against that same victim do not count.
+max-consecutive-kills-on-same-player: 2
+
+messages:
+  prefix: "&8[&bStreak&8] "
+  level-up: "&aYou reached Streak Level &e%level%&a!"
+  streak-reset: "&cYour streak was reset because you died."
+  invalid-repeat: "&cThat kill did not count: you have already killed this player twice in a row."
+  level: "&bStreak Level: &e%level% &7(&f%progress%/%required% kills&7)"
+  top-header: "&b&lTop Streaks"
+  top-entry: "&e%position%. &f%player% &7- &bLevel %level%"
+
+# Optional console commands executed when a player reaches a level.
+# Available placeholders: %player%, %level%
+# Example:
+#  5:
+#    - "give %player% golden_apple 1"
+rewards: {}
